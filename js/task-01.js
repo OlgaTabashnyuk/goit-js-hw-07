@@ -31,5 +31,7 @@ itemsListRef.forEach(item => {
   console.log(`Заголовок элемента: ${titleRef}`);
 
   const numberOfItems = item.querySelectorAll('ul > li').length;
-  console.log(`Категория: ${titleRef}, Количество элементов: ${numberOfItems}`);
+  console.log(
+    `Категория: ${titleRef} \nКоличество элементов: ${numberOfItems}`,
+  );
 });

@@ -6,24 +6,10 @@
 
 const inputRef = document.querySelector('#font-size-control');
 const textRef = document.querySelector('#text');
-// const
-console.log(textRef.textContent);
 
 const changeSize = () => {
-  if (inputRef.value > 50) {
-    textRef.style.fontSize = '45px';
-  } else {
-    textRef.style.fontSize = '20px';
-  }
+  textRef.style.fontSize = inputRef.value + 'px';
+  console.log(inputRef.value);
 };
+
 inputRef.addEventListener('input', changeSize);
-
-// вариант 2
-
-// (function () {
-//   var rng = document.getElementById('font-size-control');
-//   var text = document.getElementById('text');
-//   rng.addEventListener('input', function () {
-//     text.style.fontSize = rng.value + 'px';
-//   });
-// })();
